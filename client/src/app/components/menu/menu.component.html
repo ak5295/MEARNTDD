@@ -1,0 +1,15 @@
+<h2>{{model.menuName}}</h2>
+<table>
+  <thead>
+    <th id="name">Name</th>
+    <th>Description</th>
+    <th>Price</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of this.model.menuItems">
+        <td>{{item.name}}</td>
+        <td>{{item.description}}</td>
+        <td>{{item.price}}</td>
+    </tr>
+  </tbody>
+</table>
